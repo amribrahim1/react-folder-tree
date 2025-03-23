@@ -1,15 +1,8 @@
 {
-  "name": "react-folder-tree",
-  "version": "5.0.3",
-  "description": "customizable react folder tree library",
-  "main": "dist/react-folder-tree.bundle.js",
-  "typings": "index.d.ts",
-  "files": [
-    "dist/react-folder-tree.bundle.js",
-    "dist/style.css",
-    "index.d.ts"
-  ],
-  "author": "Shunji Zhan <shunhahaha@live.com>",
+  "name": "@amr-eraky/react-folder-tree",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Cloned from main react-folder-tree",
   "keywords": [
     "react",
     "npm",
@@ -33,15 +26,22 @@
     "recursions"
   ],
   "homepage": "https://shunjizhan.github.io/react-folder-tree-demos/",
+  "bugs": {
+    "url": "https://github.com/amribrahim1/react-folder-tree/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunjizhan/react-folder-tree.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shunjizhan/react-folder-tree/issues"
+    "url": "git+https://github.com/amribrahim1/react-folder-tree.git"
   },
   "license": "MIT",
-  "private": false,
+  "author": "Amr Eraky <amribrahim11@gmail.com>",
+  "type": "commonjs",
+  "main": "dist/react-folder-tree.bundle.js",
+  "files": [
+    "dist/react-folder-tree.bundle.js",
+    "dist/style.css",
+    "index.d.ts"
+  ],
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "webpack --config config/webpack.prod.config.js",
@@ -50,16 +50,10 @@
     "test": "jest --collect-coverage",
     "prepublish": "yarn build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.[tj]s?(x)": [
-      "eslint"
-    ]
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-icons": "^4.1.0",
+    "use-tree-state": "1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -87,8 +81,8 @@
     "lint-staged": "^10.5.1",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
-    "react": "^16.8.0 || ^17",
-    "react-dom": "^16.8.0 || ^17",
+    "react": "^17.0.2 || ^18 || ^19",
+    "react-dom": "^17.0.2 || ^18 || ^19",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.1.0",
@@ -97,12 +91,19 @@
     "webpack-dev-server": "^3.11.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17",
-    "react-dom": "^16.8.0 || ^17"
+    "react": "^17.0.2 || ^18 || ^19",
+    "react-dom": "^17.0.2 || ^18 || ^19"
   },
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "react-icons": "^4.1.0",
-    "use-tree-state": "1.0.0"
+  "typings": "index.d.ts",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.[tj]s?(x)": [
+      "eslint"
+    ]
   }
 }
