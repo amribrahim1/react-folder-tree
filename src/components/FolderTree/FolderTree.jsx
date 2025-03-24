@@ -22,6 +22,7 @@ const FolderTree = ({
   indentPixels = 30,
   onNameClick = null,
   readOnly = false,
+  keyName = '_id',
 }) => {
   const options = {
     initCheckedStatus,
@@ -62,7 +63,7 @@ const FolderTree = ({
         value={ configs }
       >
         <TreeNode
-          key={ treeState._id }
+          key={ treeState[keyName] }
           path={ [] }
           { ...treeState }
         />
@@ -93,6 +94,7 @@ FolderTree.propTypes = {
   onNameClick: PropTypes.func,
   showCheckbox: PropTypes.bool,
   readOnly: PropTypes.bool,
+  keyName: PropTypes.string,
 };
 
 export {

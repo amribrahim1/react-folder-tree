@@ -14,6 +14,7 @@ export interface FolderTreeProps {
   onNameClick?: OnNameClick;
   readOnly?: boolean;
   showCheckbox?: boolean;
+  keyName?: string;
 }
 
 export type Icon = React.FunctionComponent<IconProps>;

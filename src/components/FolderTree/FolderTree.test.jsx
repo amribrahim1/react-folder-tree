@@ -16,6 +16,7 @@ const render = ({
   indentPixels = 30,
   onNameClick = null,
   readOnly = false,
+  keyName = '_id',
 }) => {
   tree = mount((
     <FolderTree
@@ -28,6 +29,7 @@ const render = ({
       indentPixels={ indentPixels }
       onNameClick={ onNameClick }
       readOnly={ readOnly }
+      keyName={ keyName }
     />
   ));
 };

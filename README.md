@@ -246,13 +246,14 @@ const Downloader = () => (
 |-------------------|-----------------------------------------|----------|------------------------------------------------|
 | data              | initial tree state data (required)      | object   | N/A                                            |
 | initCheckedStatus | initial check status of all nodes       | string   | 'unchecked' (default) \| 'checked' \| 'custom' |
-| initOpenStatus    | initial open status of all treenodes    | string   | 'open' (default) \| 'closed' \| 'custom'        |
+| initOpenStatus    | initial open status of all treenodes    | string   | 'open' (default) \| 'closed' \| 'custom'       |
 | iconComponents    | custom icon components                  | object   | ant design icons (default)                     |
 | onChange          | callback when tree state changes        | function | console.log (default)                          |
 | onNameClick       | callback when click treenode name       | function | open treenode inline toolbox (default)         |
 | indentPixels      | ident pixels of 1x level treenode       | number   | 30 (default)                                   |
 | showCheckbox      | show check box?                         | bool     | true (default) | false                         |
-| readOnly          | readOnly mode? can't click/check node   | bool     | false (default) | true                       |
+| readOnly          | readOnly mode? can't click/check node   | bool     | false (default) | true                         |
+| keyName           | key name of each node                   | string   | '_id_' (default)                               |
 
 ---
 ## Bugs? Questions? Contributions?
