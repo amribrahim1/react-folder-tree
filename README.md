@@ -20,13 +20,13 @@ live demos and code examples can be found [here](https://shunjizhan.github.io/re
 ## Basic Usage
 ### 🌀 install
 ```bash
-$ yarn add react-folder-tree
-$ npm install react-folder-tree --save
+$ yarn add @amreraky/react-folder-tree
+$ npm install @amreraky/react-folder-tree --save
 ```
 ### 🌀 basic tree
 ```tsx
-import FolderTree, { testData } from 'react-folder-tree';
-import 'react-folder-tree/dist/style.css';
+import FolderTree, { testData } from '@amreraky/react-folder-tree';
+import '@amreraky/react-folder-tree/dist/style.css';
 
 const BasicTree = () => {
   const onTreeStateChange = (state, event) => console.log(state, event);
@@ -257,4 +257,4 @@ const Downloader = () => (
 
 ---
 ## Bugs? Questions? Contributions?
-Feel free to [open an issue](https://github.com/shunjizhan/react-folder-tree/issues), or create a pull request!
+Feel free to [open an issue](https://github.com/amribrahim1/react-folder-tree/issues), or create a pull request!
