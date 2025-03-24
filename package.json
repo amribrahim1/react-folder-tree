@@ -1,6 +1,6 @@
 {
   "name": "@amreraky/react-folder-tree",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "Cloned from main react-folder-tree",
   "keywords": [
@@ -47,8 +47,7 @@
     "build": "webpack --config config/webpack.prod.config.js",
     "start": "NODE_ENV=development node scripts/dev-server.js",
     "lint": "eslint src/ --ext .js,.jsx",
-    "test": "jest --collect-coverage",
-    "prepublish": "yarn build"
+    "test": "jest --collect-coverage"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -96,8 +95,7 @@
   "typings": "index.d.ts",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {

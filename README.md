@@ -20,7 +20,6 @@ live demos and code examples can be found [here](https://shunjizhan.github.io/re
 ## Basic Usage
 ### 🌀 install
 ```bash
-$ yarn add @amreraky/react-folder-tree
 $ npm install @amreraky/react-folder-tree --save
 ```
 ### 🌀 basic tree
